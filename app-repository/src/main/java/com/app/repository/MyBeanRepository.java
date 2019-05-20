@@ -8,8 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.app.repository.domain.MyBean;
 
-@Repository
+@Repository("myBeanRepository")
 public interface MyBeanRepository extends JpaRepository<MyBean, Long> {
-	
-	Optional<MyBean> findOne(@Param(value = "id") Long id);
 }

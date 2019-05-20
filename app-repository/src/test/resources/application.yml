@@ -6,10 +6,3 @@ management:
 http:
     mappers: 
        jsonPrettyPrint: true
-          
-logging:
-    level:
-        org.springframework.web: DEBUG
-        org.hibernate: DEBUG
-        level.org.hibernate: DEBUG
-		com.app: DEBUG

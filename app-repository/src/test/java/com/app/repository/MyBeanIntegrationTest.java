@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ContextConfiguration;
 
-import com.app.repository.config.ConfigurationRepository;
 
 
 /**
@@ -22,9 +21,7 @@ import com.app.repository.config.ConfigurationRepository;
  * 
  *
  */
-//@ContextConfiguration(classes= {ConfigurationRepository.class})
-//the above context configuraiton needs to be used instead of @SpringBootApplicaiton 
-//but yet to figure it out
+
 @DataJpaTest
 public class MyBeanIntegrationTest {
 
@@ -37,12 +34,12 @@ public class MyBeanIntegrationTest {
 
     @Test
     public void testCount() {
-    	Assertions.assertNotNull(myBeanRepository , "Data on demand for 'Topping' failed to initialize correctly");
+    	Assertions.assertNotNull(myBeanRepository , "Data on demand for 'myBean' failed to initialize correctly");
     }
 
     @Test
     public void testCount2() {
-    	Assertions.assertNotNull(myBeanRepository , "Data on demand for 'Topping 2' failed to initialize correctly");
+    	Assertions.assertNotNull(myBeanRepository , "Data on demand for 'myBean 2' failed to initialize correctly");
     }
    
 }

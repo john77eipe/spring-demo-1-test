@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.app.repository.domain.MyBean;
 
-@Repository("myBeanRepository")
+@Repository
 public interface MyBeanRepository extends JpaRepository<MyBean, Long> {
 }

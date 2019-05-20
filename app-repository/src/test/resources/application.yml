@@ -1,0 +1,15 @@
+﻿server:
+    port: 9090
+management:
+    port: 9091
+    address: 127.0.0.1
+http:
+    mappers: 
+       jsonPrettyPrint: true
+          
+logging:
+    level:
+        org.springframework.web: DEBUG
+        org.hibernate: DEBUG
+        level.org.hibernate: DEBUG
+		com.app: DEBUG
